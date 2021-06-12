@@ -1,0 +1,7 @@
+Cycle Number: 1
+Instruction: addi $s0, $zero, 1048580
+Modified Register And New Value: $s0 = 1048580
+
+Cycle Number: 2
+Instruction: sw $t0, 0($s0)
+Invalid Memory address: sw $t0, 0($s0)

@@ -1,0 +1,1 @@
+Error: Invalid register: addi $m0, $m0, 1

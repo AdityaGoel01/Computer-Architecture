@@ -1,0 +1,7 @@
+Cycle Number: 1
+Instruction: addi $t0, $t0, 1 #Incrementing$t0
+Modified Register And New Value: $t0 = 1
+
+Execution Successful! 
+Total Execution Time In Clock Cycles: 1
+Number Of Row Buffer Updates: 0

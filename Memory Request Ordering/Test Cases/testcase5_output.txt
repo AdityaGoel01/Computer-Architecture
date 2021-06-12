@@ -1,0 +1,10 @@
+Label Encountered: label1:
+
+Cycle Number: 1
+Instruction: 	addi $t0, $t0, 1
+Modified Register And New Value: $t0 = 1
+
+Cycle Number: 2
+Instruction: 	bne $t0, $zero, label2
+
+Label Not Found: 	bne $t0, $zero, label2

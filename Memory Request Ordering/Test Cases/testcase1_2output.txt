@@ -1,0 +1,3 @@
+Execution Successful! 
+Total Execution Time In Clock Cycles: 0
+Number Of Row Buffer Updates: 0

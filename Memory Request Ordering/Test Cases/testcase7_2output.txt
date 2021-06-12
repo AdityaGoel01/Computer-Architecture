@@ -1,0 +1,1 @@
+Error: Given value is not a valid number: addi $t0, $t0, abc

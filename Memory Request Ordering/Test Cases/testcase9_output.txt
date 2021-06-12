@@ -1,0 +1,103 @@
+Cycle Number: 1
+Instruction 1 :	addi $s0, $zero, 1000
+Modified Register And New Value: $s0 = 1000
+
+Cycle Number: 2
+Instruction 2 :	addi $s1, $zero, 2500
+Modified Register And New Value: $s1 = 2500
+
+Cycle Number: 3
+Instruction 3 :	addi $t0, $zero, 1
+Modified Register And New Value: $t0 = 1
+
+Cycle Number: 4
+Instruction 4 :	addi $t1, $zero, 2
+Modified Register And New Value: $t1 = 2
+
+Cycle Number: 5
+Instruction 5 :	addi $t2, $zero, 3
+Modified Register And New Value: $t2 = 3
+
+Cycle Number: 6
+Instruction 6 :	addi $t3, $zero, 4
+Modified Register And New Value: $t3 = 4
+
+Cycle Number: 7
+Instruction 7 :	addi $t4, $zero, 5
+Modified Register And New Value: $t4 = 5
+
+Cycle Number: 8
+Instruction 8 :	sw $t0, 0($s0)	#store 1 at location 1000
+DRAM Request Issued
+
+Cycle Number: 9-20
+Instruction 8 :	sw $t0, 0($s0)	#store 1 at location 1000
+Modified Memory Location And New Value: 1000-1003: 1
+
+Cycle Number: 21
+Instruction 12 :	sw $t4, 0($s0)	#store 5 at location 1000
+DRAM Request Issued
+
+Cycle Number: 22-23
+Instruction 12 :	sw $t4, 0($s0)	#store 5 at location 1000
+Modified Memory Location And New Value: 1000-1003: 5
+
+Cycle Number: 24
+Instruction 13 :	lw $t5, 0($s0)
+DRAM Request Issued
+
+Cycle Number: 25-26
+Instruction 13 :	lw $t5, 0($s0)
+Modified Register And New Value: $t5 = 5
+
+Cycle Number: 27
+Instruction 10 :	sw $t2, 4($s0)	#store 3 at location 1004
+DRAM Request Issued
+
+Cycle Number: 28-29
+Instruction 10 :	sw $t2, 4($s0)	#store 3 at location 1004
+Modified Memory Location And New Value: 1004-1007: 3
+
+Cycle Number: 30
+Instruction 15 :	lw $t7, 4($s0)
+DRAM Request Issued
+
+Cycle Number: 31-32
+Instruction 15 :	lw $t7, 4($s0)
+Modified Register And New Value: $t7 = 3
+
+Cycle Number: 33
+Instruction 9 :	sw $t1, 0($s1)	#store 2 at location 2500
+DRAM Request Issued
+
+Cycle Number: 34-55
+Instruction 9 :	sw $t1, 0($s1)	#store 2 at location 2500
+Modified Memory Location And New Value: 2500-2503: 2
+
+Cycle Number: 56
+Instruction 14 :	lw $t6, 0($s1)
+DRAM Request Issued
+
+Cycle Number: 57-58
+Instruction 14 :	lw $t6, 0($s1)
+Modified Register And New Value: $t6 = 2
+
+Cycle Number: 59
+Instruction 11 :	sw $t3, 4($s1)	#store 4 at location 2504
+DRAM Request Issued
+
+Cycle Number: 60-61
+Instruction 11 :	sw $t3, 4($s1)	#store 4 at location 2504
+Modified Memory Location And New Value: 2504-2507: 4
+
+Cycle Number: 62
+Instruction 16 :	lw $t8, 4($s1)
+DRAM Request Issued
+
+Cycle Number: 63-64
+Instruction 16 :	lw $t8, 4($s1)
+Modified Register And New Value: $t8 = 4
+
+Execution Successful! 
+Total Execution Time In Clock Cycles: 64
+Number Of Row Buffer Updates: 7

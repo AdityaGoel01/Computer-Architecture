@@ -1,0 +1,2 @@
+#My New Increment Program
+addi $t0, $t0, 1 #Incrementing$t0
